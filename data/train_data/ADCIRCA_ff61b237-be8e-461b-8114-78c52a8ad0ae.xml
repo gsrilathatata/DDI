@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Label drug="ADCIRCA" setid="ff61b237-be8e-461b-8114-78c52a8ad0ae">
+<Sentences>
+
+<Sentence id="7889" LabelDrug="Aggrenox" section="34073-7">
+<SentenceText>Co-administration with anticoagulants, antiplatelets, or NSAIDs can increase risk of bleeding (7.1) Decreased renal function can occur with co-administration with NSAIDs (7.1) Adenosine Dipyridamole has been reported to increase the plasma levels and cardiovascular effects of adenosine.</SentenceText>
+<Mention id="M5" type="Precipitant" span="23 14" str="anticoagulants" code="N0000175980"/>
+<Mention id="M8" type="Precipitant" span="39 13" str="antiplatelets" code="N0000175578"/>
+<Mention id="M10" type="SpecificInteraction" span="55 10" str="can increase"/>
+ <Mention id="M10" type="SpecificInteraction" span="100 9;116 8" str="Decreased | function"/>
+<Mention id="M14" type="Precipitant" span="57 6" str="NSAIDs" code="N0000175722"/>
+<Mention id="M16" type="Trigger" span="220 26" str="increase the plasma levels"/>
+</Sentence>
+ <Sentence id="581" LabelDrug="ADCIRCA" section="34073-7">
+<SentenceText>Ritonavir initially inhibits and later induces CYP3A , the enzyme involved in the metabolism of tadalafil .</SentenceText>
+<Mention id="M105" type="Trigger" span="39 13" str="induces CYP3A"/>
+<Mention id="M107" type="Trigger" span="20 8;47 5" str="inhibits | CYP3A"/>
+</Sentence> <Sentence id="48" LabelDrug="Xarelto" section="34073-7">
+<SentenceText>Avoid concomitant administration of XARELTO with known combined P-gp and strong CYP3A4 inhibitors ( e.g. , ketoconazole and ritonavir ) see Warnings and Precautions ( 5.6 ) and Clinical Pharmacology ( 12.3 ) .</SentenceText>
+<Mention id="M28" type="Precipitant" span="64 4;87 10" str="P-gp | inhibitors" code="n0000185503"/>
+<Mention id="M32" type="Precipitant" span="73 24" str="strong CYP3A4 inhibitors" code="n0000182141"/>
+</Sentence>
+
+</Sentences>
+</Label>
