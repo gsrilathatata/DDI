@@ -115,9 +115,9 @@ def processtokens(new_tokens,new_labels,test_sentence,elem,soup,type_of_mention)
             new_tag = soup.new_tag("Mention", "new tag added")
             countforid = countforid + 1
             new_tag.attrs["id"] = "M1" + str(countforid)
-            new_tag.attrs["type"] = "Trigger"#mention[2][2:]
-            new_tag.attrs["span"] ="2 3" #str(mention[0][0]) + ' ' + str(mention[0][1])
-            new_tag.attrs["str"] = "Hello"#mention[1]
+            new_tag.attrs["type"] = mention[2][2:]
+            new_tag.attrs["span"] = str(mention[0][0]) + ' ' + str(mention[0][1])
+            new_tag.attrs["str"] = mention[1]
             elem.append(new_tag)
             elem.append("\n")
     return elem
