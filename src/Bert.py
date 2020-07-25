@@ -11,8 +11,8 @@ from bs4 import BeautifulSoup, Tag
 from tqdm import tqdm, trange
 import transformers
 from transformers import BertForTokenClassification, AdamW
-from DDI.src import Util
-from DDI.src.SentenceGetter import SentenceGetter
+import Util
+from SentenceGetter import SentenceGetter
 from transformers import get_linear_schedule_with_warmup
 from seqeval.metrics import f1_score, accuracy_score
 import matplotlib.pyplot as plt
@@ -21,9 +21,9 @@ import seaborn as sns
 torch.__version__
 transformers.__version__
 MAX_LEN = 75
-bs = 32
+bs = 16
 FULL_FINETUNING = True
-epochs = 1
+epochs = 30
 max_grad_norm = 1.0
 path = "../data/test_data"
 
@@ -39,9 +39,9 @@ tag2idx = {t: i for i, t in enumerate(tag_values)}
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 n_gpu = torch.cuda.device_count()
-#torch.cuda.get_device_name(0)
+torch.cuda.get_device_name(0)
 
-tokenizer = BertTokenizer.from_pretrained('bert-base-cased', do_lower_case=False)
+tokenizer = BertTokenizer.from_pretrained('bert-large-cased', do_lower_case=False)
 tokenized_texts_and_labels = [
     Util.tokenize_and_preserve_labels(sent, labs,tokenizer)
     for sent, labs in zip(sentences, labels)
@@ -87,7 +87,7 @@ model = BertForTokenClassification.from_pretrained(
     output_hidden_states = False
 )
 
-#model.cuda();
+model.cuda();
 
 if FULL_FINETUNING:
     param_optimizer = list(model.named_parameters())
@@ -221,6 +221,7 @@ for file in os.listdir(path):
         allfiles.append(soup)
 
 testfile = open("../data/test_data/test.xml","w",encoding="utf-8")
+docs = []
 for testfilesidx in range(0, len(allfiles)):
     ss = allfiles[testfilesidx].find_all("sentence")
     for elem in ss:
@@ -231,8 +232,8 @@ for testfilesidx in range(0, len(allfiles)):
 
                   tokenized_sentence = tokenizer.encode(test_sentence)
 
-                  input_ids = torch.tensor([tokenized_sentence])
-                  #input_ids = torch.tensor([tokenized_sentence]).cuda()
+                  #input_ids = torch.tensor([tokenized_sentence])
+                  input_ids = torch.tensor([tokenized_sentence]).cuda()
 
                   with torch.no_grad():
                       output = model(input_ids)
@@ -247,7 +248,10 @@ for testfilesidx in range(0, len(allfiles)):
                       else:
                           new_labels.append(tag_values[label_idx])
                           new_tokens.append(token)
-                  elem = Util.processtokens(new_tokens,new_labels,test_sentence,elem,soup,"Precipitant_Trigger")
+                  elem, span_token_label = Util.processtokens(new_tokens,new_labels,test_sentence,elem,soup,"Precipitant_Trigger")
 
         testfile.write(str(elem))
         testfile.write("\n")
+        docs.append(span_token_label)
+
+Util.writetofile(docs, "../data/svm/trained_tagged.csv")

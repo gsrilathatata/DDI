@@ -87,7 +87,7 @@ def assignLabel(index_token_offset, offset_label_dict,text_id,disjointlist):
                    label_dis = disjointlist[key]
                    token_plus_biolabel.append((token, text_id, offset[0],label_dis))
                    del keys_disjoint[0]
-                   print("disjoint")
+                   #print("disjoint")
             continue
 
         if in_sequence_flag == 0:
@@ -128,7 +128,7 @@ def assignLabel(index_token_offset, offset_label_dict,text_id,disjointlist):
 
     return token_plus_biolabel
 
-path = "./training_data"
+path = "../data/train_data"
 
 count = 0
 allfiles = []
@@ -198,5 +198,5 @@ for sss in range(0, len(allfiles)):
 
         docs.append(token_plus_biolabel)
 
-Util.writetofile(docs,"svm/train.csv")
+Util.writetofile(docs,"../data/svm/train.csv")
 #Util.writetofile(docs,"svm/train_si.csv")
