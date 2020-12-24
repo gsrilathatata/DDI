@@ -1,3 +1,8 @@
+##############################################################################
+##   This class consolidats the sentences based on sentence numbers         ##
+##############################################################################
+## Sample code is picked from this website and some customization is done according to the need.
+##https://www.depends-on-the-definition.com/named-entity-recognition-with-bert/
 class SentenceGetter(object):
 
     def __init__(self, data):

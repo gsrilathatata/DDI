@@ -11,24 +11,81 @@ from bs4 import BeautifulSoup, Tag
 from tqdm import tqdm, trange
 import transformers
 from transformers import BertForTokenClassification, AdamW
-import Util
+import Postprocssing
 from SentenceGetter import SentenceGetter
 from transformers import get_linear_schedule_with_warmup
 from seqeval.metrics import f1_score, accuracy_score
 import matplotlib.pyplot as plt
 import seaborn as sns
+from xml.etree.ElementTree import ElementTree,Element
+import sys
+## Sample code is picked from this website and some customization is done according to the need.
+##https://www.depends-on-the-definition.com/named-entity-recognition-with-bert/
+## I would like to thank the author for thier contribution in the complex concept implementation
+## the code is used carefully and only required customisations are done and credits to the authos
+################################################################################
+## The main module for implementing the BERT algorithm                        ##
+## In this module pre-trained model is loaded and updated with custom tagged  ## 
+## training dataset, and evaluated for loss and fine tuning.                  ##
+## Finally, the model is used for testing the untagged sentences.             ##
+################################################################################
+
 
 torch.__version__
 transformers.__version__
-MAX_LEN = 75
-bs = 16
+MAX_LEN = 128
+bs = 32
 FULL_FINETUNING = True
-epochs = 30
+epochs = 2
 max_grad_norm = 1.0
-path = "../data/test_data"
 
-########              load the training dataset        ###########
-data = pd.read_csv("../data/svm/train.csv", encoding="latin1").fillna(method="ffill")
+if len(sys.argv) < 3:
+    print("Arguments required -  trigger or si and test or eval")
+    exit(0)
+
+typeofops = sys.argv[1]
+test_eval = sys.argv[2]
+################################################################################
+##                               Configuration Section                        ##
+##       In this section, the the required folder structure is defined        ## 
+################################################################################
+
+if test_eval == 'test':
+   if typeofops == 'trigger':
+      path_test =  "../data/test/test"
+      path_guess = "../data/test/guess"
+      #path_gold = "GOLD"
+      path_pretty = "../data/test/prettify"
+      data = pd.read_csv("../data/test/trainin_csv/train.csv", encoding="latin1").fillna(method="ffill")
+      trigger_si = "Precipitant_Trigger"
+   elif typeofops == 'si':
+      path_test = "../data/test/guess"
+      path_guess = "../data/test/guess"
+      #path_gold = "GOLD"
+      path_pretty = "../data/test/prettify"
+      data = pd.read_csv("../data/test/trainin_csv/train.csv", encoding="latin1").fillna(method="ffill")
+      trigger_si = "SpecificInteractions"
+elif test_eval == 'eval':
+   if typeofops == 'trigger':
+      path_test = "../data/eval/test"
+      path_guess = "../data/eval/guess"
+      path_gold = "../data/eval/gold"
+      path_pretty = "../data/eval/prettify"
+      data = pd.read_csv("../data/test/trainin_csv/train.csv", encoding="latin1").fillna(method="ffill")
+      Postprocssing.removeMention(path_gold,path_test)
+      trigger_si = "Precipitant_Trigger"
+   elif typeofops == 'si':
+      path_test = "../data/eval/test_si"
+      path_guess = "../data/eval/guess_si"
+      path_gold = "../data/eval/gold"
+      path_pretty = "../data/eval/prettify_si"
+      Postprocssing.removeMention(path_gold,path_test)
+      #data = pd.read_csv("../data/eval/trainin_csv/train_si.csv", encoding="latin1").fillna(method="ffill")
+      data = pd.read_csv("../data/test/trainin_csv/train_si.csv", encoding="latin1").fillna(method="ffill")
+      trigger_si = "SpecificInteractions"
+################################################################################
+##Sentence aggregation based on the sentence number from the training dataset ##
+################################################################################
 
 getter = SentenceGetter(data)
 sentences = [[word[0] for word in sentence] for sentence in getter.sentences]
@@ -41,12 +98,18 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 n_gpu = torch.cuda.device_count()
 torch.cuda.get_device_name(0)
 
+################################################################################
+##         Tokenise the sentences using BERT Tokeniser                        ##
+################################################################################
 tokenizer = BertTokenizer.from_pretrained('bert-large-cased', do_lower_case=False)
 tokenized_texts_and_labels = [
-    Util.tokenize_and_preserve_labels(sent, labs,tokenizer)
+    Postprocssing.tokenize_and_preserve_labels(sent, labs,tokenizer)
     for sent, labs in zip(sentences, labels)
 ]
 
+################################################################################
+##         Tokenise the sentences using BERT Tokeniser                        ##
+################################################################################
 tokenized_texts = [token_label_pair[0] for token_label_pair in tokenized_texts_and_labels]
 labels = [token_label_pair[1] for token_label_pair in tokenized_texts_and_labels]
 
@@ -65,6 +128,9 @@ tr_inputs, val_inputs, tr_tags, val_tags = train_test_split(input_ids, tags,
 tr_masks, val_masks, _, _ = train_test_split(attention_masks, input_ids,
                                              random_state=2018, test_size=0.1)
 
+################################################################################
+##         Convert th input tokens and labels to tensor matrices              ##
+################################################################################
 tr_inputs = torch.tensor(tr_inputs)
 val_inputs = torch.tensor(val_inputs)
 tr_tags = torch.tensor(tr_tags)
@@ -80,6 +146,9 @@ valid_data = TensorDataset(val_inputs, val_masks, val_tags)
 valid_sampler = SequentialSampler(valid_data)
 valid_dataloader = DataLoader(valid_data, sampler=valid_sampler, batch_size=bs)
 
+################################################################################
+##         Set the pretrained model paramaters                                ##
+################################################################################
 model = BertForTokenClassification.from_pretrained(
     "bert-base-cased",
     num_labels=len(tag2idx),
@@ -88,7 +157,9 @@ model = BertForTokenClassification.from_pretrained(
 )
 
 model.cuda();
-
+################################################################################
+##         Set the optimiser parameter                                        ##
+################################################################################
 if FULL_FINETUNING:
     param_optimizer = list(model.named_parameters())
     no_decay = ['bias', 'gamma', 'beta']
@@ -102,6 +173,10 @@ else:
     param_optimizer = list(model.classifier.named_parameters())
     optimizer_grouped_parameters = [{"params": [p for n, p in param_optimizer]}]
 
+################################################################################
+##      Initilaise the custom parameters of the optimiser like learning rate  ##
+##         type of optimiser etc.                                             ##
+################################################################################
 optimizer = AdamW(
     optimizer_grouped_parameters,
     lr=3e-5,
@@ -212,46 +287,71 @@ for _ in trange(epochs, desc="Epoch"):
 
    # plt.show()
 
+################################################################################
+##         prediction of the model starts here                                ##
+################################################################################
+##########################
+countforid = 0
+docs = []
+for file in os.listdir(path_test):
+    filepath = os.path.join(path_test, file)
+    filepath1 = os.path.join(path_pretty, file)
+    tree = ElementTree()
+    tree.parse(filepath)
+
+    sentences = tree.findall('.//Sentence')
+    for elem in sentences:
+            for child in elem:
+                if type(child) == Element:
+                    if child.tag == "SentenceText":
+                      test_sentence = (child.text).strip()
+
+                      tokenized_sentence = tokenizer.encode(test_sentence)
+
+                      #input_ids = torch.tensor([tokenized_sentence])
+                      input_ids = torch.tensor([tokenized_sentence]).cuda()
+
+                      with torch.no_grad():
+                          output = model(input_ids)
+                      label_indices = np.argmax(output[0].to('cpu').numpy(), axis=2)
+
+                      # join bpe split tokens
+                      tokens = tokenizer.convert_ids_to_tokens(input_ids.to('cpu').numpy()[0])
+                      new_tokens, new_labels = [], []
+                      for token, label_idx in zip(tokens, label_indices[0]):
+                          if token.startswith("##"):
+                              new_tokens[-1] = new_tokens[-1] + token[2:]
+                          else:
+                              new_labels.append(tag_values[label_idx])
+                              new_tokens.append(token)
+################################################################################
+##         post processing of the tokens to extract the relavant mention      ##
+################################################################################
+                      elem, span_token_label,countforid  = Postprocssing.processtokens(new_tokens,new_labels,test_sentence,elem,trigger_si,countforid)
+
+            docs.append(span_token_label)
+    
+    tree.write(filepath1)
+#Postprocssing.writetofile(docs, "../data/svm/trained_tagged.csv")
+################################################################################
+##         write the tagged mentions to xml                                   ##
+################################################################################
 allfiles = []
-for file in os.listdir(path):
-    filepath = os.path.join(path, file)
+new_file = []
+for file in os.listdir(path_pretty):
+    filepath = os.path.join(path_pretty, file)
     with open(filepath, mode="r", encoding="utf-8") as fp:
         contents = fp.read()
-        soup = BeautifulSoup(contents, 'html.parser')
+        soup = BeautifulSoup(contents, 'xml')
         allfiles.append(soup)
-
-testfile = open("../data/test_data/test.xml","w",encoding="utf-8")
-docs = []
+        new_file.append(file)
+################################################################################
+##         Pretty print the xmls for redability                               ##
+################################################################################
+#print(len(allfiles))
 for testfilesidx in range(0, len(allfiles)):
-    ss = allfiles[testfilesidx].find_all("sentence")
-    for elem in ss:
-        for child in elem:
-            if type(child) == Tag:
-                if child.name == "sentencetext":
-                  test_sentence = (child.text).strip()
-
-                  tokenized_sentence = tokenizer.encode(test_sentence)
-
-                  #input_ids = torch.tensor([tokenized_sentence])
-                  input_ids = torch.tensor([tokenized_sentence]).cuda()
-
-                  with torch.no_grad():
-                      output = model(input_ids)
-                  label_indices = np.argmax(output[0].to('cpu').numpy(), axis=2)
-
-                  # join bpe split tokens
-                  tokens = tokenizer.convert_ids_to_tokens(input_ids.to('cpu').numpy()[0])
-                  new_tokens, new_labels = [], []
-                  for token, label_idx in zip(tokens, label_indices[0]):
-                      if token.startswith("##"):
-                          new_tokens[-1] = new_tokens[-1] + token[2:]
-                      else:
-                          new_labels.append(tag_values[label_idx])
-                          new_tokens.append(token)
-                  elem, span_token_label = Util.processtokens(new_tokens,new_labels,test_sentence,elem,soup,"Precipitant_Trigger")
-
-        testfile.write(str(elem))
-        testfile.write("\n")
-        docs.append(span_token_label)
-
-Util.writetofile(docs, "../data/svm/trained_tagged.csv")
+    filepath1 =os.path.join(path_guess , new_file[testfilesidx])
+    testfile = open(filepath1, "w", encoding="utf-8")
+    testfile.write(allfiles[testfilesidx].prettify())
+##########################
+Postprocssing.writetofile(docs, "../data/eval/trainin_csv/trained_tagged.csv")

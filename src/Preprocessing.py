@@ -1,10 +1,26 @@
 import os
+## I eould like to thank and acknowldge the auther of the blog for clearly writing the sample for custom tagging scheme
 #sample code from https://github.com/seanysull/Drug-NER-and-Interaction-Extraction/blob/master/drugNER.py
 import nltk
 from nltk.tokenize import TreebankWordTokenizer
 from bs4 import BeautifulSoup
 from bs4.element import Tag
-import Util
+import Postprocssing
+import sys
+
+################################################################################
+##        This class is mainly used for encoding of the spl xmls              ##
+################################################################################
+if len(sys.argv) < 3:
+    print("Arguments required -  trigger or si and test or eval")
+    exit(0)
+
+typeofops = sys.argv[1]
+test_eval = sys.argv[2]
+
+##################################################################################
+##this mapping is used for getting the following tag while handling multi tokens##
+##################################################################################
 def getFollowLabel(label):
     In_labels = {'B-Precipitant': 'I-Precipitant',
                  'B-SpecificInteraction': 'I-SpecificInteraction',
@@ -13,7 +29,10 @@ def getFollowLabel(label):
                  'DB-Precipitant': 'DI-Precipitant'
                  }
     return In_labels[label]
-#######################################################################################
+##############################################################################
+##      combine tokens and offsets as tuples                                ##
+##############################################################################
+
 def getTokensAndOffsets(sentence):
     """
     Given a sentence, as a string tokenise it and return tokens and token spans as a list of tuples
@@ -22,6 +41,9 @@ def getTokensAndOffsets(sentence):
     offsets = TreebankWordTokenizer().span_tokenize(sentence)
     tokens_and_offsets = list(zip(tokens, offsets))
     return tokens_and_offsets
+#############################################################################
+## This process handles the multi token disjoints and overlapping text     ##
+##############################################################################
 
 def multispantag(offset_label_dict,doublespanarrays):
     # get list of keys(offsets) from offset-drug_type dict these are the locations of the entities
@@ -57,6 +79,9 @@ def multispantag(offset_label_dict,doublespanarrays):
                 elif begin_disjoint == 1:
                     disjoint_dict[key] = 'DI-' + spans[1]
     return offset_entity_dict, disjoint_dict
+##############################################################################
+##  Assign the labels to the tokens extarcted from mentions                 ##
+##############################################################################
 
 def assignLabel(index_token_offset, offset_label_dict,text_id,disjointlist):
 
@@ -128,8 +153,10 @@ def assignLabel(index_token_offset, offset_label_dict,text_id,disjointlist):
 
     return token_plus_biolabel
 
-path = "../data/train_data"
-
+if test_eval == 'test':
+    path = "../data/test/test"
+else:
+    path = "../data/eval/gold"
 count = 0
 allfiles = []
 for file in os.listdir(path):
@@ -166,8 +193,12 @@ for sss in range(0, len(allfiles)):
                     index_token_offset = list(zip(indexes, just_tokens, just_offsets))
                 if child.name == "mention":
                     label = child.attrs['type']
-                    if label == 'Precipitant' or label == 'Trigger':
-                      entities.append(child)
+                    if typeofops == 'trigger':
+                       if label == 'Precipitant' or label == 'Trigger':
+                          entities.append(child)
+                    elif typeofops == 'si':
+                       if label == 'SpecificInteraction':
+                          entities.append(child)
         entity_dictionaries = [entity.attrs for entity in entities]
         if entities == []:
           offset_entity_dict = {}
@@ -197,6 +228,14 @@ for sss in range(0, len(allfiles)):
         token_plus_biolabel = assignLabel(index_token_offset, new_offset_entity_dict,text_id,disjointlist)
 
         docs.append(token_plus_biolabel)
+if test_eval == 'test':
+   if typeofops == 'trigger':
+      Postprocssing.writetofile(docs,"../data/test/trainin_csv/train.csv")
+   elif typeofops == 'si':
+      Postprocssing.writetofile(docs,"../data/test/trainin_csv/train_si.csv")
+elif test_eval == 'eval':
+   if typeofops == 'trigger':
+      Postprocssing.writetofile(docs,"../data/eval/trainin_csv/train.csv")
+   elif typeofops == 'si':
+      Postprocssing.writetofile(docs,"../data/eval/trainin_csv/train_si.csv")
 
-Util.writetofile(docs,"../data/svm/train.csv")
-#Util.writetofile(docs,"svm/train_si.csv")
