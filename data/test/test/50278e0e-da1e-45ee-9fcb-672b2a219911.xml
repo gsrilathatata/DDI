@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Label drug="Zovirax" setid="50278e0e-da1e-45ee-9fcb-672b2a219911">
+  <Text>
+    <Section name="CONTRAINDICATIONS SECTION" id="34070-3">ZOVIRAX Ointment 5% is contraindicated in patients who develop hypersensitivity to the components of the formulation.</Section>
+    <Section name="DOSAGE &amp; ADMINISTRATION SECTION" id="34068-7">Apply sufficient quantity to adequately cover all lesions every 3 hours, 6 times per day for 7 days. The dose size per application will vary depending upon the total lesion area but should approximate a one-half inch ribbon of ointment per 4 square inches of surface area. A finger cot or rubber glove should be used when applying ZOVIRAX to prevent autoinoculation of other body sites and transmission of infection to other persons.  Therapy should be initiated as early as possible following onset of signs and symptoms.</Section>
+    <Section name="DRUG INTERACTIONS SECTION" id="34073-7">Drug Interactions: Clinical experience has identified no interactions resulting from topical or systemic administration of other drugs concomitantly with ZOVIRAX Ointment 5%.</Section>
+    <Section name="PRECAUTIONS SECTION" id="42232-9">General: The recommended dosage, frequency of applications, and length of treatment should not be exceeded (see  DOSAGE AND ADMINISTRATION ). There are no data to support the use of ZOVIRAX Ointment 5% to prevent transmission of infection to other persons or prevent recurrent infections when applied in the absence of signs and symptoms. ZOVIRAX Ointment 5% should not be used for the prevention of recurrent HSV infections. Although clinically significant viral resistance associated with the use of ZOVIRAX Ointment 5% has not been observed, this possibility exists.            Drug Interactions: Clinical experience has identified no interactions resulting from topical or systemic administration of other drugs concomitantly with ZOVIRAX Ointment 5%.            Carcinogenesis, Mutagenesis, Impairment of Fertility: Systemic exposure following topical administration of acyclovir is minimal. Dermal carcinogenicity studies were not conducted. Results from the studies of carcinogenesis, mutagenesis, and fertility are not included in the full prescribing information for ZOVIRAX Ointment 5% due to the minimal exposures of acyclovir that result from dermal application. Information on these studies is available in the full prescribing information for ZOVIRAX Capsules, Tablets, and Suspension and ZOVIRAX for Injection.                 Pregnancy:  Teratogenic Effects:  Acyclovir was not teratogenic in the mouse, rabbit, or rat at exposures greatly in excess of human exposure. There are no adequate and well-controlled studies of systemic acyclovir in pregnant women. A prospective epidemiologic registry of acyclovir use during pregnancy was established in 1984 and completed in April 1999. There were 749 pregnancies followed in women exposed to  systemic acyclovir during the first trimester of pregnancy resulting in 756 outcomes. The occurrence rate of birth defects approximates that found in the general population. However, the small size of the registry is insufficient to evaluate the risk for less common defects or to permit reliable or definitive conclusions regarding the safety of acyclovir in pregnant women and their developing fetuses. Systemic acyclovir should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.              Nursing Mothers: It is not known whether topically applied acyclovir is excreted in breast milk. Systemic exposure following  topical administration is minimal. After  oral administration of ZOVIRAX, acyclovir concentrations have been documented in breast milk in 2 women and ranged from 0.6 to 4.1 times the corresponding plasma levels. These concentrations would potentially expose the nursing infant to a dose of acyclovir up to 0.3 mg/kg/day. Nursing mothers who have active herpetic lesions near or on the breast should avoid nursing.            Geriatric Use: Clinical studies of ZOVIRAX Ointment did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects. Other reported clinical experience has not identified differences in responses between the elderly and younger patients. Systemic absorption of acyclovir after topical administration is minimal (see  CLINICAL PHARMACOLOGY ).            Pediatric Use: Safety and effectiveness in pediatric patients have not been established.</Section>
+    <Section name="WARNINGS SECTION" id="34071-1">ZOVIRAX Ointment 5% is intended for cutaneous use only and should not be used in the eye.</Section>
+    <Section name="CLINICAL PHARMACOLOGY SECTION" id="34090-1">Two clinical pharmacology studies were performed with ZOVIRAX Ointment 5% in immunocompromised adults at risk of developing mucocutaneous HSV infections or with localized varicella-zoster infections. These studies were designed to evaluate the dermal tolerance, systemic toxicity, and percutaneous absorption of acyclovir.  In one of these studies, which included 16 inpatients, the complete ointment or its vehicle were randomly administered in a dose of 1-cm strips (25 mg acyclovir) 4 times a day for 7 days to an intact skin surface area of 4.5 square inches. No local intolerance, systemic toxicity, or contact dermatitis were observed. In addition, no drug was detected in blood and urine by radioimmunoassay (sensitivity, 0.01 mcg/mL).  The other study included 11 patients with localized varicella zoster infections. In this uncontrolled study, acyclovir was detected in the blood of 9 patients and in the urine of all patients tested. Acyclovir levels in plasma ranged from &lt;0.01 to 0.28 mcg/mL in 8 patients with normal renal function, and from &lt;0.01 to 0.78 mcg/mL in 1 patient with impaired renal function. Acyclovir excreted in the urine ranged from &lt;0.02% to 9.4% of the daily dose. Therefore, systemic absorption of acyclovir after topical application is minimal.</Section>
+  </Text>
+  <Sentences>
+    <Sentence id="8879" LabelDrug="Zovirax" section="34070-3">
+      <SentenceText>ZOVIRAX Ointment 5% is contraindicated in patients who develop hypersensitivity to the components of the formulation.</SentenceText>
+    </Sentence>
+    <Sentence id="8880" LabelDrug="Zovirax" section="34068-7">
+      <SentenceText>Apply sufficient quantity to adequately cover all lesions every 3 hours, 6 times per day for 7 days.</SentenceText>
+    </Sentence>
+    <Sentence id="8881" LabelDrug="Zovirax" section="34068-7">
+      <SentenceText>The dose size per application will vary depending upon the total lesion area but should approximate a one-half inch ribbon of ointment per 4 square inches of surface area.</SentenceText>
+    </Sentence>
+    <Sentence id="8882" LabelDrug="Zovirax" section="34068-7">
+      <SentenceText>A finger cot or rubber glove should be used when applying ZOVIRAX to prevent autoinoculation of other body sites and transmission of infection to other persons.</SentenceText>
+    </Sentence>
+    <Sentence id="8883" LabelDrug="Zovirax" section="34068-7">
+      <SentenceText>Therapy should be initiated as early as possible following onset of signs and symptoms.</SentenceText>
+    </Sentence>
+    <Sentence id="8884" LabelDrug="Zovirax" section="34073-7">
+      <SentenceText>Drug Interactions: Clinical experience has identified no interactions resulting from topical or systemic administration of other drugs concomitantly with ZOVIRAX Ointment 5%.</SentenceText>
+    </Sentence>
+    <Sentence id="8885" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>General: The recommended dosage, frequency of applications, and length of treatment should not be exceeded.</SentenceText>
+    </Sentence>
+    <Sentence id="8886" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>There are no data to support the use of ZOVIRAX Ointment 5% to prevent transmission of infection to other persons or prevent recurrent infections when applied in the absence of signs and symptoms.</SentenceText>
+    </Sentence>
+    <Sentence id="8887" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>ZOVIRAX Ointment 5% should not be used for the prevention of recurrent HSV infections.</SentenceText>
+    </Sentence>
+    <Sentence id="8888" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>Although clinically significant viral resistance associated with the use of ZOVIRAX Ointment 5% has not been observed, this possibility exists.</SentenceText>
+    </Sentence>
+    <Sentence id="8889" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>Carcinogenesis, Mutagenesis, Impairment of Fertility: Systemic exposure following topical administration of acyclovir is minimal.</SentenceText>
+    </Sentence>
+    <Sentence id="8890" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>Dermal carcinogenicity studies were not conducted.</SentenceText>
+    </Sentence>
+    <Sentence id="8891" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>Results from the studies of carcinogenesis, mutagenesis, and fertility are not included in the full prescribing information for ZOVIRAX Ointment 5% due to the minimal exposures of acyclovir that result from dermal application.</SentenceText>
+    </Sentence>
+    <Sentence id="8892" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>Information on these studies is available in the full prescribing information for ZOVIRAX Capsules, Tablets, and Suspension and ZOVIRAX for Injection.</SentenceText>
+    </Sentence>
+    <Sentence id="8893" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>Pregnancy: Teratogenic Effects: Acyclovir was not teratogenic in the mouse, rabbit, or rat at exposures greatly in excess of human exposure.</SentenceText>
+    </Sentence>
+    <Sentence id="8894" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>There are no adequate and well-controlled studies of systemic acyclovir in pregnant women.</SentenceText>
+    </Sentence>
+    <Sentence id="8895" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>A prospective epidemiologic registry of acyclovir use during pregnancy was established in 1984 and completed in April 1999.</SentenceText>
+    </Sentence>
+    <Sentence id="8896" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>There were 749 pregnancies followed in women exposed to systemic acyclovir during the first trimester of pregnancy resulting in 756 outcomes.</SentenceText>
+    </Sentence>
+    <Sentence id="8897" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>The occurrence rate of birth defects approximates that found in the general population.</SentenceText>
+    </Sentence>
+    <Sentence id="8898" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>However, the small size of the registry is insufficient to evaluate the risk for less common defects or to permit reliable or definitive conclusions regarding the safety of acyclovir in pregnant women and their developing fetuses.</SentenceText>
+    </Sentence>
+    <Sentence id="8899" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>Systemic acyclovir should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.</SentenceText>
+    </Sentence>
+    <Sentence id="8900" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>Nursing Mothers: It is not known whether topically applied acyclovir is excreted in breast milk.</SentenceText>
+    </Sentence>
+    <Sentence id="8901" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>Systemic exposure following topical administration is minimal.</SentenceText>
+    </Sentence>
+    <Sentence id="8902" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>After oral administration of ZOVIRAX, acyclovir concentrations have been documented in breast milk in 2 women and ranged from 0.6 to 4.1 times the corresponding plasma levels.</SentenceText>
+    </Sentence>
+    <Sentence id="8903" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>These concentrations would potentially expose the nursing infant to a dose of acyclovir up to 0.3 mg/kg/day.</SentenceText>
+    </Sentence>
+    <Sentence id="8904" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>Nursing mothers who have active herpetic lesions near or on the breast should avoid nursing.</SentenceText>
+    </Sentence>
+    <Sentence id="8905" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>Geriatric Use: Clinical studies of ZOVIRAX Ointment did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects.</SentenceText>
+    </Sentence>
+    <Sentence id="8906" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>Other reported clinical experience has not identified differences in responses between the elderly and younger patients.</SentenceText>
+    </Sentence>
+    <Sentence id="8907" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>Systemic absorption of acyclovir after topical administration is minimal.</SentenceText>
+    </Sentence>
+    <Sentence id="8908" LabelDrug="Zovirax" section="42232-9">
+      <SentenceText>Pediatric Use: Safety and effectiveness in pediatric patients have not been established.</SentenceText>
+    </Sentence>
+    <Sentence id="8909" LabelDrug="Zovirax" section="34071-1">
+      <SentenceText>ZOVIRAX Ointment 5% is intended for cutaneous use only and should not be used in the eye.</SentenceText>
+    </Sentence>
+    <Sentence id="8910" LabelDrug="Zovirax" section="34090-1">
+      <SentenceText>Two clinical pharmacology studies were performed with ZOVIRAX Ointment 5% in immunocompromised adults at risk of developing mucocutaneous HSV infections or with localized varicella-zoster infections.</SentenceText>
+    </Sentence>
+    <Sentence id="8911" LabelDrug="Zovirax" section="34090-1">
+      <SentenceText>These studies were designed to evaluate the dermal tolerance, systemic toxicity, and percutaneous absorption of acyclovir.</SentenceText>
+    </Sentence>
+    <Sentence id="8912" LabelDrug="Zovirax" section="34090-1">
+      <SentenceText>In one of these studies, which included 16 inpatients, the complete ointment or its vehicle were randomly administered in a dose of 1-cm strips (25 mg acyclovir) 4 times a day for 7 days to an intact skin surface area of 4.5 square inches.</SentenceText>
+    </Sentence>
+    <Sentence id="8913" LabelDrug="Zovirax" section="34090-1">
+      <SentenceText>No local intolerance, systemic toxicity, or contact dermatitis were observed.</SentenceText>
+    </Sentence>
+    <Sentence id="8914" LabelDrug="Zovirax" section="34090-1">
+      <SentenceText>In addition, no drug was detected in blood and urine by radioimmunoassay (sensitivity, 0.01 mcg/mL).</SentenceText>
+    </Sentence>
+    <Sentence id="8915" LabelDrug="Zovirax" section="34090-1">
+      <SentenceText>The other study included 11 patients with localized varicella zoster infections.</SentenceText>
+    </Sentence>
+    <Sentence id="8916" LabelDrug="Zovirax" section="34090-1">
+      <SentenceText>In this uncontrolled study, acyclovir was detected in the blood of 9 patients and in the urine of all patients tested.</SentenceText>
+    </Sentence>
+    <Sentence id="8917" LabelDrug="Zovirax" section="34090-1">
+      <SentenceText>Acyclovir levels in plasma ranged from &lt;0.01 to 0.28 mcg/mL in 8 patients with normal renal function, and from &lt;0.01 to 0.78 mcg/mL in 1 patient with impaired renal function.</SentenceText>
+    </Sentence>
+    <Sentence id="8918" LabelDrug="Zovirax" section="34090-1">
+      <SentenceText>Acyclovir excreted in the urine ranged from &lt;0.02% to 9.4% of the daily dose.</SentenceText>
+    </Sentence>
+    <Sentence id="8919" LabelDrug="Zovirax" section="34090-1">
+      <SentenceText>Therefore, systemic absorption of acyclovir after topical application is minimal.</SentenceText>
+    </Sentence>
+  </Sentences>
+  <LabelInteractions/>
+</Label>

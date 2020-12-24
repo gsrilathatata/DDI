@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Label drug="Clotrimazole" setid="0bc4b876-ddee-4f03-b44f-544348739a26">
+  <Text>
+    <Section name="CONTRAINDICATIONS SECTION" id="34070-3">Clotrimazole is contraindicated in patients who are hypersensitive to any of its components.</Section>
+    <Section name="DOSAGE &amp; ADMINISTRATION SECTION" id="34068-7">Clotrimazole is administered only as a lozenge that must be slowly dissolved in the mouth. The recommended dose is one troche five times a day for fourteen consecutive days. Only limited data are available on the safety and effectiveness of the clotrimazole troche after prolonged administration; therefore, therapy should be limited to short term use, if possible.  For prophylaxis to reduce the incidence of oropharyngeal candidiasis in patients immunocompromised by conditions that include chemotherapy, radiotherapy, or steroid therapy utilized in the treatment of leukemia, solid tumors, or renal transplantation, the recommended dose is one troche three times daily for the duration of chemotherapy or until steroids are reduced to maintenance levels.</Section>
+    <Section name="PRECAUTIONS SECTION" id="42232-9">Abnormal liver function tests have been reported in patients treated with clotrimazole troches; elevated SGOT levels were reported in about 15% of patients in the clinical trials. In most cases the elevations were minimal and it was often impossible to distinguish effects of clotrimazole from those of other therapy and the underlying disease (malignancy in most cases). Periodic assessment of hepatic function is advisable particularly in patients with pre-existing hepatic impairment.  Since patients must be instructed to allow each troche to dissolve slowly in the mouth in order to achieve maximum effect of the medication, they must be of such an age and physical and/or mental condition to comprehend such instructions.         An 18 month dosing study with clotrimazole in rats has not revealed any carcinogenic effect.            Pregnancy Category C: Clotrimazole has been shown to be embryotoxic in rats and mice when given in doses 100 times the adult human dose (in mg/kg), possibly secondary to maternal toxicity. The drug was not teratogenic in mice, rabbits, and rats when given in doses up to 200, 180, and 100 times the human dose.  Clotrimazole given orally to mice from nine weeks before mating through weaning at a dose 120 times the human dose was associated with impairment of mating, decreased number of viable young, and decreased survival to weaning. No effects were observed at 60 times the human dose. When the drug was given to rats during a similar time period at 50 times the human dose, there was a slight decrease in the number of pups per litter and decreased pup viability.  There are no adequate and well controlled studies in pregnant women. Clotrimazole troches should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.           Safety and effectiveness of clotrimazole in children below the age of 3 years have not been established; therefore, its use in such patients is not recommended.  The safety and efficacy of the prophylactic use of clotrimazole troches in children have not been established.           Clinical studies of clotrimazole did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects. Other reported clinical experience has not identified differences in responses between the elderly and younger patients.</Section>
+    <Section name="WARNINGS SECTION" id="34071-1">Clotrimazole is not indicated for the treatment of systemic mycoses including systemic candidiasis.</Section>
+    <Section name="CLINICAL PHARMACOLOGY SECTION" id="34090-1">Clotrimazole is a broad-spectrum antifungal agent that inhibits the growth of pathogenic yeasts by altering the permeability of cell membranes. The action of clotrimazole is fungistatic at concentrations of drug up to 20 mcg/mL and may be fungicidal  in vitro against  Candida albicans and other species of the genus  Candida at higher concentrations. No single-step or multiple-step resistance to clotrimazole has developed during successive passages of  Candida albicans in the laboratory; however, individual organism tolerance has been observed during successive passages in the laboratory. Such  in vitro tolerance has resolved once the organism has been removed from the antifungal environment.  After oral administration of a 10 mg clotrimazole troche to healthy volunteers, concentrations sufficient to inhibit most species of  Candida persist in saliva for up to three hours following the approximately 30 minutes needed for a troche to dissolve. The long term persistence of drug in saliva appears to be related to the slow release of clotrimazole from the oral mucosa to which the drug is apparently bound. Repetitive dosing at three hour intervals maintains salivary levels above the minimum inhibitory concentrations of most strains of  Candida ; however, the relationship between  in vitro susceptibility of pathogenic fungi to clotrimazole and prophylaxis or cure of infections in humans has not been established.  In another study, the mean serum concentrations were 4.98 ± 3.7 and 3.23 ± 1.4 nanograms/mL of clotrimazole at 30 and 60 minutes, respectively, after administration as a troche.</Section>
+  </Text>
+  <Sentences>
+    <Sentence id="9176" LabelDrug="Clotrimazole" section="34070-3">
+      <SentenceText>Clotrimazole is contraindicated in patients who are hypersensitive to any of its components.</SentenceText>
+    </Sentence>
+    <Sentence id="9177" LabelDrug="Clotrimazole" section="34068-7">
+      <SentenceText>Clotrimazole is administered only as a lozenge that must be slowly dissolved in the mouth.</SentenceText>
+    </Sentence>
+    <Sentence id="9178" LabelDrug="Clotrimazole" section="34068-7">
+      <SentenceText>The recommended dose is one troche five times a day for fourteen consecutive days.</SentenceText>
+    </Sentence>
+    <Sentence id="9179" LabelDrug="Clotrimazole" section="34068-7">
+      <SentenceText>Only limited data are available on the safety and effectiveness of the clotrimazole troche after prolonged administration; therefore, therapy should be limited to short term use, if possible.</SentenceText>
+    </Sentence>
+    <Sentence id="9180" LabelDrug="Clotrimazole" section="34068-7">
+      <SentenceText>For prophylaxis to reduce the incidence of oropharyngeal candidiasis in patients immunocompromised by conditions that include chemotherapy, radiotherapy, or steroid therapy utilized in the treatment of leukemia, solid tumors, or renal transplantation, the recommended dose is one troche three times daily for the duration of chemotherapy or until steroids are reduced to maintenance levels.</SentenceText>
+    </Sentence>
+    <Sentence id="9181" LabelDrug="Clotrimazole" section="42232-9">
+      <SentenceText>Abnormal liver function tests have been reported in patients treated with clotrimazole troches; elevated SGOT levels were reported in about 15% of patients in the clinical trials.</SentenceText>
+    </Sentence>
+    <Sentence id="9182" LabelDrug="Clotrimazole" section="42232-9">
+      <SentenceText>In most cases the elevations were minimal and it was often impossible to distinguish effects of clotrimazole from those of other therapy and the underlying disease (malignancy in most cases).</SentenceText>
+    </Sentence>
+    <Sentence id="9183" LabelDrug="Clotrimazole" section="42232-9">
+      <SentenceText>Periodic assessment of hepatic function is advisable particularly in patients with pre-existing hepatic impairment.</SentenceText>
+    </Sentence>
+    <Sentence id="9184" LabelDrug="Clotrimazole" section="42232-9">
+      <SentenceText>Since patients must be instructed to allow each troche to dissolve slowly in the mouth in order to achieve maximum effect of the medication, they must be of such an age and physical and/or mental condition to comprehend such instructions.</SentenceText>
+    </Sentence>
+    <Sentence id="9185" LabelDrug="Clotrimazole" section="42232-9">
+      <SentenceText>An 18 month dosing study with clotrimazole in rats has not revealed any carcinogenic effect.</SentenceText>
+    </Sentence>
+    <Sentence id="9186" LabelDrug="Clotrimazole" section="42232-9">
+      <SentenceText>Pregnancy Category C: Clotrimazole has been shown to be embryotoxic in rats and mice when given in doses 100 times the adult human dose (in mg/kg), possibly secondary to maternal toxicity.</SentenceText>
+    </Sentence>
+    <Sentence id="9187" LabelDrug="Clotrimazole" section="42232-9">
+      <SentenceText>The drug was not teratogenic in mice, rabbits, and rats when given in doses up to 200, 180, and 100 times the human dose.</SentenceText>
+    </Sentence>
+    <Sentence id="9188" LabelDrug="Clotrimazole" section="42232-9">
+      <SentenceText>Clotrimazole given orally to mice from nine weeks before mating through weaning at a dose 120 times the human dose was associated with impairment of mating, decreased number of viable young, and decreased survival to weaning.</SentenceText>
+    </Sentence>
+    <Sentence id="9189" LabelDrug="Clotrimazole" section="42232-9">
+      <SentenceText>No effects were observed at 60 times the human dose.</SentenceText>
+    </Sentence>
+    <Sentence id="9190" LabelDrug="Clotrimazole" section="42232-9">
+      <SentenceText>When the drug was given to rats during a similar time period at 50 times the human dose, there was a slight decrease in the number of pups per litter and decreased pup viability.</SentenceText>
+    </Sentence>
+    <Sentence id="9191" LabelDrug="Clotrimazole" section="42232-9">
+      <SentenceText>There are no adequate and well controlled studies in pregnant women.</SentenceText>
+    </Sentence>
+    <Sentence id="9192" LabelDrug="Clotrimazole" section="42232-9">
+      <SentenceText>Clotrimazole troches should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.</SentenceText>
+    </Sentence>
+    <Sentence id="9193" LabelDrug="Clotrimazole" section="42232-9">
+      <SentenceText>Safety and effectiveness of clotrimazole in children below the age of 3 years have not been established; therefore, its use in such patients is not recommended.</SentenceText>
+    </Sentence>
+    <Sentence id="9194" LabelDrug="Clotrimazole" section="42232-9">
+      <SentenceText>The safety and efficacy of the prophylactic use of clotrimazole troches in children have not been established.</SentenceText>
+    </Sentence>
+    <Sentence id="9195" LabelDrug="Clotrimazole" section="42232-9">
+      <SentenceText>Clinical studies of clotrimazole did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects.</SentenceText>
+    </Sentence>
+    <Sentence id="9196" LabelDrug="Clotrimazole" section="42232-9">
+      <SentenceText>Other reported clinical experience has not identified differences in responses between the elderly and younger patients.</SentenceText>
+    </Sentence>
+    <Sentence id="9197" LabelDrug="Clotrimazole" section="34071-1">
+      <SentenceText>Clotrimazole is not indicated for the treatment of systemic mycoses including systemic candidiasis.</SentenceText>
+    </Sentence>
+    <Sentence id="9198" LabelDrug="Clotrimazole" section="34090-1">
+      <SentenceText>Clotrimazole is a broad-spectrum antifungal agent that inhibits the growth of pathogenic yeasts by altering the permeability of cell membranes.</SentenceText>
+    </Sentence>
+    <Sentence id="9199" LabelDrug="Clotrimazole" section="34090-1">
+      <SentenceText>The action of clotrimazole is fungistatic at concentrations of drug up to 20 mcg/mL and may be fungicidal in vitro against Candida albicans and other species of the genus Candida at higher concentrations.</SentenceText>
+    </Sentence>
+    <Sentence id="9200" LabelDrug="Clotrimazole" section="34090-1">
+      <SentenceText>No single-step or multiple-step resistance to clotrimazole has developed during successive passages of Candida albicans in the laboratory; however, individual organism tolerance has been observed during successive passages in the laboratory.</SentenceText>
+    </Sentence>
+    <Sentence id="9201" LabelDrug="Clotrimazole" section="34090-1">
+      <SentenceText>Such in vitro tolerance has resolved once the organism has been removed from the antifungal environment.</SentenceText>
+    </Sentence>
+    <Sentence id="9202" LabelDrug="Clotrimazole" section="34090-1">
+      <SentenceText>After oral administration of a 10 mg clotrimazole troche to healthy volunteers, concentrations sufficient to inhibit most species of Candida persist in saliva for up to three hours following the approximately 30 minutes needed for a troche to dissolve.</SentenceText>
+    </Sentence>
+    <Sentence id="9203" LabelDrug="Clotrimazole" section="34090-1">
+      <SentenceText>The long term persistence of drug in saliva appears to be related to the slow release of clotrimazole from the oral mucosa to which the drug is apparently bound.</SentenceText>
+    </Sentence>
+    <Sentence id="9204" LabelDrug="Clotrimazole" section="34090-1">
+      <SentenceText>Repetitive dosing at three hour intervals maintains salivary levels above the minimum inhibitory concentrations of most strains of Candida; however, the relationship between in vitro susceptibility of pathogenic fungi to clotrimazole and prophylaxis or cure of infections in humans has not been established.</SentenceText>
+    </Sentence>
+    <Sentence id="9205" LabelDrug="Clotrimazole" section="34090-1">
+      <SentenceText>In another study, the mean serum concentrations were 4.98 ± 3.7 and 3.23 ± 1.4 nanograms/mL of clotrimazole at 30 and 60 minutes, respectively, after administration as a troche.</SentenceText>
+    </Sentence>
+  </Sentences>
+  <LabelInteractions/>
+</Label>

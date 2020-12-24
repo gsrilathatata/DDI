@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Label drug="Bacitracin" setid="6ed2f2bd-9d2f-46af-a44c-95a02ca034de">
+  <Text>
+    <Section name="CONTRAINDICATIONS SECTION" id="34070-3">This product should not be used in patients with a history of hypersensitivity to Bacitracin.</Section>
+    <Section name="DOSAGE &amp; ADMINISTRATION SECTION" id="34068-7">The ointment should be applied directly into the conjunctival sac 1 to 3 times daily. In blepharitis all scales and crusts should be carefully removed and the ointment then spread uniformly over the lid margins. Patients should be instructed to take appropriate measures to avoid gross contamination of the ointment when applying the ointment directly to the infected eye.</Section>
+    <Section name="PRECAUTIONS SECTION" id="42232-9">Bacitracin ophthalmic ointment should not be used in deep-seated ocular infections or in those that are likely to become systemic. The prolonged use of antibiotic containing preparations may result in overgrowth of nonsusceptible organisms particularly fungi. If new infections develop during treatment appropriate antibiotic or chemotherapy should be instituted.</Section>
+    <Section name="CLINICAL PHARMACOLOGY SECTION" id="34090-1">The antibiotic, Bacitracin, exerts a profound action against many gram-positive pathogens, including the common Streptococci and Staphlococci. It is also destructive for certain gram-negative organisms. It is ineffective against fungi.</Section>
+  </Text>
+  <Sentences>
+    <Sentence id="1574" LabelDrug="Bacitracin" section="34070-3">
+      <SentenceText>This product should not be used in patients with a history of hypersensitivity to Bacitracin.</SentenceText>
+    </Sentence>
+    <Sentence id="1575" LabelDrug="Bacitracin" section="34068-7">
+      <SentenceText>The ointment should be applied directly into the conjunctival sac 1 to 3 times daily.</SentenceText>
+    </Sentence>
+    <Sentence id="1576" LabelDrug="Bacitracin" section="34068-7">
+      <SentenceText>In blepharitis all scales and crusts should be carefully removed and the ointment then spread uniformly over the lid margins.</SentenceText>
+    </Sentence>
+    <Sentence id="1577" LabelDrug="Bacitracin" section="34068-7">
+      <SentenceText>Patients should be instructed to take appropriate measures to avoid gross contamination of the ointment when applying the ointment directly to the infected eye.</SentenceText>
+    </Sentence>
+    <Sentence id="1578" LabelDrug="Bacitracin" section="42232-9">
+      <SentenceText>Bacitracin ophthalmic ointment should not be used in deep-seated ocular infections or in those that are likely to become systemic.</SentenceText>
+    </Sentence>
+    <Sentence id="1579" LabelDrug="Bacitracin" section="42232-9">
+      <SentenceText>The prolonged use of antibiotic containing preparations may result in overgrowth of nonsusceptible organisms particularly fungi.</SentenceText>
+    </Sentence>
+    <Sentence id="1580" LabelDrug="Bacitracin" section="42232-9">
+      <SentenceText>If new infections develop during treatment appropriate antibiotic or chemotherapy should be instituted.</SentenceText>
+    </Sentence>
+    <Sentence id="1581" LabelDrug="Bacitracin" section="34090-1">
+      <SentenceText>The antibiotic, Bacitracin, exerts a profound action against many gram-positive pathogens, including the common Streptococci and Staphlococci.</SentenceText>
+    </Sentence>
+    <Sentence id="1582" LabelDrug="Bacitracin" section="34090-1">
+      <SentenceText>It is also destructive for certain gram-negative organisms.</SentenceText>
+    </Sentence>
+  </Sentences>
+  <LabelInteractions/>
+</Label>

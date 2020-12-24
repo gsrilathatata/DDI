@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Label drug="Triprolidine Hydrochloride" setid="fd834576-3f5c-4c77-bd42-a45966f60a41">
+  <Text>
+    <Section name="DOSAGE &amp; ADMINISTRATION SECTION" id="34068-7">take every 4 to 6 hours  do not take more than 4 doses in 24 hours or as directed by a doctor.  do not give more than directed or exceed the recommended daily dosage  use only with enclosed dropper  do not use enclosed dropper for any other drug product        Adults and children 12 years of age and over  4 mL (2.5 mg)    Children 6 to under 12 years of age  2 mL (1.25 mg)    Children under 6 years of age  ask a doctor</Section>
+    <Section name="WARNINGS SECTION" id="34071-1">May cause excitability, especially in children           if you or your children are taking sedatives or tranquilizers, without first consulting your doctor  with any other product containing triprolidine             glaucoma  a breathing problem such as emphysema or chronic bronchitis  difficulty in urination due to enlargement of the prostate gland              do not use more than directed   may cause drowsiness  avoid alcoholic drinks  alcohol, sedatives, and tranquilizers may increase drowsiness  be careful when driving a motor vehicle or operating machinery             nervousness, dizziness or sleeplessness occurs  symptoms do not improve within 7 days or are accompanied by a fever             If pregnant or breast-feeding, ask a health professional before use.            Keep out of reach of children.   In case of overdose, get medical help or contact a Poison Control Center right away.</Section>
+  </Text>
+  <Sentences>
+    <Sentence id="2853" LabelDrug="Triprolidine Hydrochloride" section="34068-7">
+      <SentenceText>take every 4 to 6 hours do not take more than 4 doses in 24 hours or as directed by a doctor. do not give more than directed or exceed the recommended daily dosage use only with enclosed dropper do not use enclosed dropper for any other drug product Adults and children 12 years of age and over 4 mL (2.5 mg) Children 6 to under 12 years of age 2 mL (1.25 mg) Children under 6 years of age ask a doctor</SentenceText>
+    </Sentence>
+    <Sentence id="2854" LabelDrug="Triprolidine Hydrochloride" section="34071-1">
+      <SentenceText>May cause excitability, especially in children if you or your children are taking sedatives or tranquilizers, without first consulting your doctor with any other product containing triprolidine glaucoma a breathing problem such as emphysema or chronic bronchitis difficulty in urination due to enlargement of the prostate gland do not use more than directed may cause drowsiness avoid alcoholic drinks alcohol, sedatives, and tranquilizers may increase drowsiness be careful when driving a motor vehicle or operating machinery nervousness, dizziness or sleeplessness occurs symptoms do not improve within 7 days or are accompanied by a fever If pregnant or breast-feeding, ask a health professional before use.</SentenceText>
+    </Sentence>
+    <Sentence id="2855" LabelDrug="Triprolidine Hydrochloride" section="34071-1">
+      <SentenceText>In case of overdose, get medical help or contact a Poison Control Center right away.</SentenceText>
+    </Sentence>
+  </Sentences>
+  <LabelInteractions/>
+</Label>

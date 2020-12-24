@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Label drug="POTASSIUM IODIDE" setid="d9e02a48-8129-9076-78b2-db01750bd220">
+  <Text>
+    <Section name="DOSAGE &amp; ADMINISTRATION SECTION" id="34068-7">Directions    use as directed by public officials in the event of a nuclear
+radiation emergency.   do not take more than 1 dose in 24 hours.    Dosing Chart 
+       
+ 
+   (dropper inside) 
+      
+
+    Adults over 18 years  2 mL every day (130 mg)
+       
+ 
+    and
+        
+  
+    Children over 12 years to 18 years
+        
+  
+    who weigh at least 150 pounds
+       
+ 
+    2 mL every day (130
+mg)
+      
+
+     Children over 12 years to 18 years
+        
+  
+    who weigh less than 150 pounds
+       
+ 
+    1 mL every day
+(65 mg)
+       
+ 
+    and
+        
+  
+    Children over 3 years to 12
+years
+       
+ 
+    1 mL every day (65 mg)
+      
+
+     Children over 1 month to 3 years  0.5 mL every day (32.5 mg)
+      
+
+     Babies at birth to 1 month  0.25 mL every day (16.25 mg)
+      
+
+        Dropper 2mL         Dropper 1mL         Dropper 0.5mL         Dropper 0.25 mL          Use only as directed by public officials if a nuclear radiation
+emergency happens.   Dose:    Adults over 18 years 2 mL every day (130 mg)
+      
+
+    Children over 12 years to
+18 years 2 mL every day (130 mg)
+       
+ 
+     who weigh at least 150 pounds    Children over 12 years to
+18 years 1 mL every day (65 mg)
+       
+ 
+    who weigh
+less than 150 pounds    Children over 3 years to 12 years 1 mL every day (65
+mg)
+       
+ 
+      Children over 1 month to
+3 years 0.5 mL every day (32.5 mg)
+       
+ 
+      Babies at birth
+to 1 month 0.25 mL every day (16.25 mg)
+       
+ 
+     Take KI every day (every
+24 hours) as directed by public officials. Do not take more than 1
+dose in 24 hours. More will not help you. Too much medicine may increase
+the chances of side effects.      Dropper 2mL         Dropper 1mL         Dropper 0.5mL         Dropper 0.25mL</Section>
+    <Section name="WARNINGS SECTION" id="34071-1">Warnings   Allergy alert:
+Iodine may cause an allergic reaction with 1 or more of the following
+symptoms:    shortness of breath or wheezing  skin rash   trouble breathing, speaking or swallowing  swelling  fever and joint pain    Do not use if you have ever had   an allergic reaction to iodine   nodular thyroid disease with heart disease   hypocomplementemic vasculitis   dermatitis herpetiformis     Stop use and ask a doctor if you have   an allergic reaction. Get medical help right away if you
+have trouble breathing, speaking or swallowing; shortness of breath;
+wheezing; swelling of the mouth, tongue or throat; or rash.   irregular heart or chest pain. Get medical help right away.   swelling of the hands or feet, fever, or joint pain.             Keep Out of
+Reach of Children.   In case of overdose, get medical help or contact a Poison Control
+Center right away.         People
+who are allergic to iodine, have dermatitis herpetiformis or hypocomplementemic
+vasculitis, or have nodular thyroid disease with heart disease should
+not take KI. 
+       
+ 
+   Keep out of the reach of children. In case
+of an allergic reaction (difficulty breathing, speaking or swallowing;
+wheezing; shortness of breath or swelling of the mouth or throat),
+call 911 or get medical care right away. In case of overdose, get
+medical help or call a Poison Control Center right away.</Section>
+  </Text>
+  <Sentences>
+    <Sentence id="5283" LabelDrug="POTASSIUM IODIDE" section="34068-7">
+      <SentenceText>Directions use as directed by public officials in the event of a nuclear radiation emergency. do not take more than 1 dose in 24 hours.</SentenceText>
+    </Sentence>
+    <Sentence id="5284" LabelDrug="POTASSIUM IODIDE" section="34068-7">
+      <SentenceText>Dosing Chart (dropper inside) Adults over 18 years 2 mL every day (130 mg) and Children over 12 years to 18 years who weigh at least 150 pounds 2 mL every day (130 mg) Children over 12 years to 18 years who weigh less than 150 pounds 1 mL every day (65 mg) and Children over 3 years to 12 years 1 mL every day (65 mg) Children over 1 month to 3 years 0.5 mL every day (32.5 mg) Babies at birth to 1 month 0.25 mL every day (16.25 mg) Dropper 2mL Dropper 1mL Dropper 0.5mL Dropper 0.25 mL</SentenceText>
+    </Sentence>
+    <Sentence id="5285" LabelDrug="POTASSIUM IODIDE" section="34068-7">
+      <SentenceText>Use only as directed by public officials if a nuclear radiation emergency happens.</SentenceText>
+    </Sentence>
+    <Sentence id="5286" LabelDrug="POTASSIUM IODIDE" section="34068-7">
+      <SentenceText>Dose: Adults over 18 years 2 mL every day (130 mg) Children over 12 years to 18 years 2 mL every day (130 mg) who weigh at least 150 pounds Children over 12 years to 18 years 1 mL every day (65 mg) who weigh less than 150 pounds Children over 3 years to 12 years 1 mL every day (65 mg) Children over 1 month to 3 years 0.5 mL every day (32.5 mg) Babies at birth to 1 month 0.25 mL every day (16.25 mg) Take KI every day (every 24 hours) as directed by public officials.</SentenceText>
+    </Sentence>
+    <Sentence id="5287" LabelDrug="POTASSIUM IODIDE" section="34068-7">
+      <SentenceText>Do not take more than 1 dose in 24 hours.</SentenceText>
+    </Sentence>
+    <Sentence id="5288" LabelDrug="POTASSIUM IODIDE" section="34068-7">
+      <SentenceText>Too much medicine may increase the chances of side effects.</SentenceText>
+    </Sentence>
+    <Sentence id="5289" LabelDrug="POTASSIUM IODIDE" section="34068-7">
+      <SentenceText>Dropper 2mL Dropper 1mL Dropper 0.5mL Dropper 0.25mL</SentenceText>
+    </Sentence>
+    <Sentence id="5290" LabelDrug="POTASSIUM IODIDE" section="34071-1">
+      <SentenceText>Warnings Allergy alert: Iodine may cause an allergic reaction with 1 or more of the following symptoms: shortness of breath or wheezing skin rash trouble breathing, speaking or swallowing swelling fever and joint pain Do not use if you have ever had an allergic reaction to iodine nodular thyroid disease with heart disease hypocomplementemic vasculitis dermatitis herpetiformis Stop use and ask a doctor if you have an allergic reaction.</SentenceText>
+    </Sentence>
+    <Sentence id="5291" LabelDrug="POTASSIUM IODIDE" section="34071-1">
+      <SentenceText>Get medical help right away if you have trouble breathing, speaking or swallowing; shortness of breath; wheezing; swelling of the mouth, tongue or throat; or rash. irregular heart or chest pain.</SentenceText>
+    </Sentence>
+    <Sentence id="5292" LabelDrug="POTASSIUM IODIDE" section="34071-1">
+      <SentenceText>Get medical help right away. swelling of the hands or feet, fever, or joint pain.</SentenceText>
+    </Sentence>
+    <Sentence id="5293" LabelDrug="POTASSIUM IODIDE" section="34071-1">
+      <SentenceText>In case of overdose, get medical help or contact a Poison Control Center right away.</SentenceText>
+    </Sentence>
+    <Sentence id="5294" LabelDrug="POTASSIUM IODIDE" section="34071-1">
+      <SentenceText>People who are allergic to iodine, have dermatitis herpetiformis or hypocomplementemic vasculitis, or have nodular thyroid disease with heart disease should not take KI.</SentenceText>
+    </Sentence>
+    <Sentence id="5295" LabelDrug="POTASSIUM IODIDE" section="34071-1">
+      <SentenceText>In case of an allergic reaction (difficulty breathing, speaking or swallowing; wheezing; shortness of breath or swelling of the mouth or throat), call 911 or get medical care right away.</SentenceText>
+    </Sentence>
+    <Sentence id="5296" LabelDrug="POTASSIUM IODIDE" section="34071-1">
+      <SentenceText>In case of overdose, get medical help or call a Poison Control Center right away.</SentenceText>
+    </Sentence>
+  </Sentences>
+  <LabelInteractions/>
+</Label>
